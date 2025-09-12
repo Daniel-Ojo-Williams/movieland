@@ -182,6 +182,10 @@ body {
         width: 320px;
     }
 
+    .cp {
+        font-size: 1.2rem;
+    }
+
     .search i {
         display: none;
     }
