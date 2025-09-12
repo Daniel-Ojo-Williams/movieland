@@ -66,7 +66,7 @@ body {
 
 .movies {
     margin-block: 50px;
-    gap: 20px;
+    gap: 30px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
@@ -134,6 +134,16 @@ body {
 
 .poster .content p:nth-of-type(2) {
     font-weight: 700;
+}
+
+.cp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #BF953F;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: Raleway, sans-serif;
 }
 
 @media screen and (max-width: 1040px) {
