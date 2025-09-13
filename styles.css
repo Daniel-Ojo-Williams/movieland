@@ -11,18 +11,18 @@
 
 body {
     background-color: #212426;
-    padding: 80px;
 }
 
 .header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
+    gap: 40px;
+    margin-top: 30px;
 }
 
 .logo {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-family: Roboto Slab, sans-serif;
     background: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #fbf5b75e, #aa761c36);
     background-clip: text;
@@ -46,11 +46,10 @@ body {
 .search input {
     background: transparent;
     /* height: 100%; */
-    font-size: 1.3rem;
+    font-size: 1rem;
     flex-grow: 1;
     color: #BF953F;
-    font-family: Roboto Slab, sans-serif;
-
+    font-family: Raleway , sans-serif;
 }
 
 .search i {
@@ -62,10 +61,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-block: 50px;
+    width: 100%;
 }
 
 .movies {
-    margin-block: 50px;
     gap: 30px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -186,10 +186,42 @@ body {
         font-size: 1.2rem;
     }
 
-    .search i {
-        display: none;
-    }
     .movies {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .poster {
+     height: 250px;
+     width: 180px;   
+    }
+
+    .poster .content {
+        font-size: .8rem;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .search {
+        width: 320px;
+    }
+
+    .cp {
+        font-size: 1.2rem;
+    }
+
+    .movies {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .poster {
+     height: 200px;
+     width: 150px;   
+    }
+
+    .poster .content {
+        font-size: .8rem;
     }
 }
